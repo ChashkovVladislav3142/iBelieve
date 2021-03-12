@@ -16,3 +16,4 @@ $ go run main.go -p=11 -q=17 -text=very_secret
 Encrypted message: [84 50 113 110 184 174 50 143 113 50 24]
 Decrypted message: very_secret
 ```
+
