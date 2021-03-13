@@ -30,3 +30,4 @@ def is_detached(gitdir: pathlib.Path) -> bool:
 def get_ref(gitdir: pathlib.Path) -> str:
     # PUT YOUR CODE HERE
     ...
+    
