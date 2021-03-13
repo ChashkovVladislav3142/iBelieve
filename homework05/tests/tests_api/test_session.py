@@ -85,3 +85,4 @@ class TestSession(unittest.TestCase):
         session = Session("https://example.com", max_retries=1)
         with self.assertRaises(ConnectionError):
             _ = session.get("")
+            
