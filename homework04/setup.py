@@ -18,3 +18,4 @@ setup(
     license="GPLv3",
     python_requires=">=3.6.0",
 )
+
