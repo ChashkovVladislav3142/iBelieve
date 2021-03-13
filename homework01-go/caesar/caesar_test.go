@@ -4,60 +4,60 @@ import "testing"
 
 func TestEncryptCaesar(t *testing.T) {
 	result := EncryptCaesar("PYTHON", 3)
-	expectedResult := "SBWKRQ"
+	expected_result := "SBWKRQ"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = EncryptCaesar("python", 3)
-	expectedResult = "sbwkrq"
+	expected_result = "sbwkrq"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = EncryptCaesar("Python3.6", 3)
-	expectedResult = "Sbwkrq3.6"
+	expected_result = "Sbwkrq3.6"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = EncryptCaesar("", 3)
-	expectedResult = ""
+	expected_result = ""
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 }
 
 func TestDecryptCaesar(t *testing.T) {
 	result := DecryptCaesar("SBWKRQ", 3)
-	expectedResult := "PYTHON"
+	expected_result := "PYTHON"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = DecryptCaesar("sbwkrq", 3)
-	expectedResult = "python"
+	expected_result = "python"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = DecryptCaesar("Sbwkrq3.6", 3)
-	expectedResult = "Python3.6"
+	expected_result = "Python3.6"
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 
 	result = DecryptCaesar("", 3)
-	expectedResult = ""
+	expected_result = ""
 
-	if result != expectedResult {
-		t.Fatalf("Expected '%s' but got '%s'", expectedResult, result)
+	if result != expected_result {
+		t.Fatalf("Expected '%s' but got '%s'", expected_result, result)
 	}
 }
