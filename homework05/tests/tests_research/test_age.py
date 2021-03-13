@@ -57,3 +57,4 @@ class AgeTestCase(unittest.TestCase):
             status=200,
         )
         self.assertIsNone(age_predict(user_id=123))
+        
