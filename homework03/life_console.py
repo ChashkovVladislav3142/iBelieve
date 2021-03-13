@@ -5,6 +5,7 @@ from ui import UI
 
 
 class Console(UI):
+
     def __init__(self, life: GameOfLife) -> None:
         super().__init__(life)
 
@@ -20,3 +21,4 @@ class Console(UI):
         screen = curses.initscr()
         # PUT YOUR CODE HERE
         curses.endwin()
+        
