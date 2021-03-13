@@ -9,4 +9,4 @@ omit =
 ignore_errors = True
 
 [xml]
-output = coverage.xml
+output = coverage.xml 
