@@ -5,3 +5,4 @@ VK_CONFIG = {
     "access_token": "",
     "version": "5.126",
 }
+
