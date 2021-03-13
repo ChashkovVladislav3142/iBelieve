@@ -8,7 +8,6 @@ from requests.packages.urllib3.util.retry import Retry
 class Session:
     """
     Сессия.
-
     :param base_url: Базовый адрес, на который будут выполняться запросы.
     :param timeout: Максимальное время ожидания ответа от сервера.
     :param max_retries: Максимальное число повторных запросов.
@@ -29,3 +28,4 @@ class Session:
 
     def post(self, url: str, *args: tp.Any, **kwargs: tp.Any) -> requests.Response:
         pass
+    
