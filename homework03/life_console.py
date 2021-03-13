@@ -22,3 +22,4 @@ class Console(UI):
         # PUT YOUR CODE HERE
         curses.endwin()
         
+        
