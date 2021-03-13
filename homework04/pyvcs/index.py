@@ -52,3 +52,4 @@ def ls_files(gitdir: pathlib.Path, details: bool = False) -> None:
 def update_index(gitdir: pathlib.Path, paths: tp.List[pathlib.Path], write: bool = True) -> None:
     # PUT YOUR CODE HERE
     ...
+    
